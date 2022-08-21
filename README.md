@@ -87,23 +87,23 @@ which gzclient
 ```
 After Installing the Gazebo, the Gazebo ROS Package must be installed seperately
 ```
-sudo apt-get install ros-melodic-gazebo-ros-pkgs ros-melodic-gazebo-ros-control
+sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
 ```
-Replace `melodic` with your version of ROS everwhere in this tutorial.
+Replace `noetic` with your version of ROS everwhere in this tutorial.
 ### Turtlebot3 packages([More Details](http://wiki.ros.org/turtlebot3))
 The Turtlebot3 ROS packages can be either downloaded and built from source files in your workspace
 or else directly installed from the linux terminal. Either way works, I would recommend doing both as it installs all the missing dependencies required automatically.
 #### Direct Installation
 ```
-source /opt/ros/melodic/setup.bash
-sudo apt-get install ros-melodic-turtlebot3-msgs
-sudo apt-get install ros-melodic-turtlebot3
+source /opt/ros/noetic/setup.bash
+sudo apt-get install ros-noetic-turtlebot3-msgs
+sudo apt-get install ros-noetic-turtlebot3
 ```
 Building the packages
 ```
 cd catkin_ws/src
-git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3
-git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations
 cd ..
 catkin_make
 source /devel/setup.bash
@@ -112,9 +112,9 @@ source /devel/setup.bash
 ### Navigation Stack ([More Details](http://wiki.ros.org/navigation))
 The Navigation stack can also be downloaded as souce files to your workspace and built.
 ```
-sudo apt-get install ros-melodic-navigation
+sudo apt-get install ros-noetic-navigation
 cd catkin_ws/src
-git clone -b melodic-devel https://github.com/ros-planning/navigation
+git clone -b noetic-devel https://github.com/ros-planning/navigation
 cd ..
 catkin_make
 source /devel/setup.bash
